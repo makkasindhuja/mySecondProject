@@ -1,0 +1,8 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Installs Homebrew, a package manager for macOS. It allows you to easily install and manage developer tools and applications from Terminal.
+brew --version:Displays the installed Homebrew version and confirms that Homebrew is installed correctly.
+brew instal git:nstalls Git on your Mac using Homebrew.
+brew search <name>:Searches Homebrew for available packages/formulas matching the specified name.
+brew install <name>:Installs the specified package/application using Homebrew.
+brew update:Updates Homebrew's list of available packages and their latest versions.
+brew upgarde:Upgrades installed Homebrew packages to their latest available versions.

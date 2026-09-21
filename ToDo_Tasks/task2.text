@@ -1,0 +1,12 @@
+brew search python:Searches Homebrew for available Python packages and versions. This helps identify the Python package that can be installed on macOS.
+brew info python:Displays detailed information about the Python package, including its version, dependencies, installation location, and configuration details.
+brew install python:Installs Python using Homebrew. It also automatically installs the required dependencies such as OpenSSL, SQLite, XZ, and others.
+python3 --version:Checks which Python 3 version is currently being used by the terminal. Initially, this showed Python 3.9.6, which was the macOS system Python.
+which python3:Shows the location of the python3 executable being used. Initially, it showed /usr/bin/python3, meaning the system Python was being used.
+/opt/homebrew/bin/python3 --version:Directly checks the Python version installed by Homebrew. This confirmed Python 3.14.7 was installed correctly.
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc:Adds Homebrew's /opt/homebrew/bin directory to the beginning of the shell PATH so Homebrew programs are found before the macOS system versions.
+source ~/.zshrc:Reloads the .zshrc shell configuration so the PATH change takes effect in the current Terminal session.
+which python3:Checks the Python location again after updating PATH. It now showed /opt/homebrew/bin/python3, confirming the Homebrew Python was being used.
+python --version:Verifies the active Python version after fixing PATH. It returned Python 3.14.7.
+pip3 --version:Checks the installed pip version and confirms that pip is associated with Python 3.14. It returned pip 26.2.1.
+python3 -c "print('Hello from Python installed via Homebrew!')":Runs a small Python command directly from the Terminal to verify that Python is working correctly.
