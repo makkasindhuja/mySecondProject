@@ -1,0 +1,17 @@
+brew search node:Searches Homebrew for available Node.js versions and related packages.
+brew info node@22:Displays information about Node.js 22, including version, installation details, and configuration.
+brew install node@22:Installs Node.js version 22 using Homebrew.
+echo 'export PATH="/opt/homebrew/opt/node@22/bin:$PATH"' >> ~/.zshrc:Adds the Node.js 22 installation directory to the shell PATH so node, npm, and npx can be used from the Terminal.
+source ~/.zshrc:Reloads the .zshrc configuration so the updated PATH takes effect in the current Terminal session.
+node --version:Displays the installed Node.js version. You verified v22.23.2.
+npm --version:Displays the installed npm version. You verified 10.9.8.
+npx --version:Displays the installed npx version. You verified 10.9.8.
+which node:Shows the location/path of the Node.js executable being used.
+node -e "console.log('Hello from Node.js installed via Homebrew!')":Executes a small JavaScript program directly from the Terminal to confirm Node.js is working.
+npm install -g cowsay:Installs the cowsay npm package globally as a test of global npm package installation.
+cowsay "Task 03 complete":Runs the installed cowsay program and displays the message using ASCII art.
+npm uninstall -g cowsay:Removes the globally installed cowsay package after testing it.
+mkdir hello-node:Creates a new folder/directory named hello-node for the Node.js project.
+cd hello-node:Changes the current Terminal location into the hello-node folder.
+npm init -y:Initializes a new Node.js project and automatically creates a package.json file using the default settings.
+node -e "console.log('package.json created by npm init')":Executes JavaScript with Node.js to confirm the npm project initialization step was successful.
